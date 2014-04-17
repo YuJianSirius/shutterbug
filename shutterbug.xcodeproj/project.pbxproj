@@ -22,8 +22,8 @@
 		9114A8F118C8924600C5E3C4 /* shutterbugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114A8F018C8924600C5E3C4 /* shutterbugTests.m */; };
 		9114A8FE18C8932400C5E3C4 /* FlickrphotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114A8FD18C8932400C5E3C4 /* FlickrphotoTVC.m */; };
 		9114A90118C89C0800C5E3C4 /* justpostedflickrphotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114A90018C89C0800C5E3C4 /* justpostedflickrphotoTVC.m */; };
-		9114A90618C8A17600C5E3C4 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114A90518C8A17600C5E3C4 /* FlickrFetcher.m */; };
 		9125F98118CEE7F70020B3EF /* shutterbug_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9125F97F18CEE7F70020B3EF /* shutterbug_ipad.storyboard */; };
+		9155ECA618FFB888009A62F5 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9155ECA518FFB888009A62F5 /* FlickrFetcher.m */; };
 		91687F1F18FFB31A008C42D1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91687F1E18FFB31A008C42D1 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -59,10 +59,10 @@
 		9114A8FD18C8932400C5E3C4 /* FlickrphotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrphotoTVC.m; path = ../FlickrphotoTVC.m; sourceTree = "<group>"; };
 		9114A8FF18C89C0800C5E3C4 /* justpostedflickrphotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = justpostedflickrphotoTVC.h; path = ../justpostedflickrphotoTVC.h; sourceTree = "<group>"; };
 		9114A90018C89C0800C5E3C4 /* justpostedflickrphotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = justpostedflickrphotoTVC.m; path = ../justpostedflickrphotoTVC.m; sourceTree = "<group>"; };
-		9114A90318C8A17600C5E3C4 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
-		9114A90418C8A17600C5E3C4 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
-		9114A90518C8A17600C5E3C4 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		9125F98018CEE7F70020B3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/shutterbug_ipad.storyboard; sourceTree = "<group>"; };
+		9155ECA318FFB888009A62F5 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		9155ECA418FFB888009A62F5 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		9155ECA518FFB888009A62F5 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		91687F1D18FFB30E008C42D1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		91687F1E18FFB31A008C42D1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,7 +124,7 @@
 		9114A8CB18C8924600C5E3C4 /* shutterbug */ = {
 			isa = PBXGroup;
 			children = (
-				9114A90218C8A17600C5E3C4 /* Flickr Fetcher */,
+				9155ECA218FFB888009A62F5 /* Flickr Fetcher */,
 				9114A8FF18C89C0800C5E3C4 /* justpostedflickrphotoTVC.h */,
 				91687F1D18FFB30E008C42D1 /* ImageViewController.h */,
 				91687F1E18FFB31A008C42D1 /* ImageViewController.m */,
@@ -170,15 +170,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9114A90218C8A17600C5E3C4 /* Flickr Fetcher */ = {
+		9155ECA218FFB888009A62F5 /* Flickr Fetcher */ = {
 			isa = PBXGroup;
 			children = (
-				9114A90318C8A17600C5E3C4 /* FlickrAPIKey.h */,
-				9114A90418C8A17600C5E3C4 /* FlickrFetcher.h */,
-				9114A90518C8A17600C5E3C4 /* FlickrFetcher.m */,
+				9155ECA318FFB888009A62F5 /* FlickrAPIKey.h */,
+				9155ECA418FFB888009A62F5 /* FlickrFetcher.h */,
+				9155ECA518FFB888009A62F5 /* FlickrFetcher.m */,
 			);
-			name = "Flickr Fetcher";
-			path = "../../../../Desktop/API/Flickr Fetcher";
+			path = "Flickr Fetcher";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +281,8 @@
 				9114A90118C89C0800C5E3C4 /* justpostedflickrphotoTVC.m in Sources */,
 				9114A8FE18C8932400C5E3C4 /* FlickrphotoTVC.m in Sources */,
 				9114A8D618C8924600C5E3C4 /* AppDelegate.m in Sources */,
-				9114A90618C8A17600C5E3C4 /* FlickrFetcher.m in Sources */,
 				91687F1F18FFB31A008C42D1 /* ImageViewController.m in Sources */,
+				9155ECA618FFB888009A62F5 /* FlickrFetcher.m in Sources */,
 				9114A8D218C8924600C5E3C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
